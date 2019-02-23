@@ -1,3 +1,17 @@
 body {
     padding-top: 5rem;
 }
+
+.grid-container{
+	display: grid;
+	grid-template-columns: repeat(3, 250px);
+	grid-template-rows: repeat(3, 250px);
+	margin:10px;
+	grid-auto-rows: 250px;
+	grid-gap: 10px 10px;
+}
+
+.grid-ele{
+	width: 250px;
+	height: 250px;
+}

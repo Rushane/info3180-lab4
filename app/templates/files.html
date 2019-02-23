@@ -2,13 +2,11 @@
 
 {% block main %}
 {% include 'flash_messages.html' %}
-<div>
+<div class="grid-container">
 	{% for image in images%}
-	<ul>
 	<div>
-	  <li>	<img src="{{ url_for('static', filename='uploads/'+image) }}" /> </li>
+	  	<img class="grid-ele" src="{{ url_for('static', filename='uploads/'+image) }}" /> 
 	</div>
-	</ul>
 	{% endfor %}
 </div>
 
